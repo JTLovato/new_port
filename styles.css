@@ -1,0 +1,175 @@
+:root {
+  --red: #ff0000;
+  --navy: #1c1c55;
+  --gold: #efb814;
+  --white: #f2f2f2;
+  --black: #2f2f2f;
+  --blue: #195673;
+}
+
+@font-face {
+  font-family: "Logistra";
+  src: url("fonts/Logistra.ttf");
+}
+
+html,
+body {
+  background-color: var(--white);
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-family: "Oswald", sans-serif;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: calc(100vw - 50px);
+  height: calc(100vh - 50px);
+  border: solid 8px var(--black);
+  border-radius: 20px;
+}
+
+.rsyte-logo {
+  width: 75px;
+}
+
+nav {
+  padding: 12px;
+  width: calc(100% - 66px);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  position: absolute;
+}
+
+.nav-left {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.nav-button {
+  margin: 0px 7px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--black);
+  font-size: 120%;
+  border-bottom: solid 2px #ffffff00;
+  transition: all 0.15s ease-in-out;
+}
+.nav-button:hover {
+  border-bottom: solid 2px var(--gold);
+}
+
+.hero-holder {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-image {
+  width: 90%;
+  z-index: 1;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  animation: image-grow;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes image-grow {
+  0% {
+    width: 90%;
+    left: 5%;
+  }
+  100% {
+    width: 120%;
+    left: -10%;
+  }
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 100px;
+}
+
+.hero-main-text {
+  position: absolute;
+  z-index: 2;
+  font-family: "Logistra";
+  color: var(--black);
+  font-size: 400%;
+  animation: color-change;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  text-shadow: 3px 3px 0px var(--white), 5px 5px 3px #00000096;
+}
+
+@keyframes color-change {
+  0% {
+    color: var(--black);
+  }
+  50% {
+    color: var(--black);
+  }
+  70% {
+    color: #a81010;
+  }
+  100% {
+    color: var(--black);
+  }
+}
+
+.main-one {
+  top: 0;
+  left: 8%;
+}
+.main-two {
+  top: 50%;
+  right: 8%;
+}
+.hero-main-body {
+  position: absolute;
+  top: 150%;
+  left: 25px;
+  z-index: 2;
+  padding: 0 30px;
+  width: calc(100% - 110px);
+  background-color: #f2f2f288;
+  box-shadow: 0 0 50px 15px #f2f2f288;
+  font-size: 90%;
+}
+
+.hero-button {
+  position: absolute;
+  bottom: 0;
+  color: var(--white);
+  background-color: var(--black);
+  padding: 8px 20px;
+  text-decoration: none;
+  border-radius: 20px 20px 0 0;
+  z-index: 3;
+}
+
+.hero-button-holder {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  font-size: 200%;
+}

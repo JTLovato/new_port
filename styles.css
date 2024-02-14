@@ -26,6 +26,7 @@ body {
 body {
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
 
 main {
@@ -95,8 +96,8 @@ nav {
     left: 5%;
   }
   100% {
-    width: 120%;
-    left: -10%;
+    width: 98%;
+    left: 1%;
   }
 }
 

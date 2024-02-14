@@ -26,7 +26,6 @@ body {
 body {
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
 }
 
 main {
@@ -85,7 +84,7 @@ nav {
   position: absolute;
   left: 5%;
   top: 15%;
-  animation: image-grow;
+  /* animation: image-grow; */
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }

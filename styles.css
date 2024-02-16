@@ -103,6 +103,12 @@ nav {
   bottom: 0px;
   padding: 0 8px;
   z-index: 3;
+  background: rgb(242, 242, 242);
+  background: linear-gradient(
+    180deg,
+    rgba(242, 242, 242, 0.9192051820728291) 22%,
+    rgba(242, 242, 242, 1) 37%
+  );
 }
 
 .hero-main-text-holder {

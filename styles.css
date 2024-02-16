@@ -138,6 +138,5 @@ nav {
   width: calc(100% - 34px);
   display: flex;
   justify-content: center;
-  position: absolute;
-  bottom: 17px;
+  margin-bottom: -1px;
 }

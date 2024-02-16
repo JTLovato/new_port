@@ -102,13 +102,32 @@ nav {
   position: absolute;
   bottom: 0px;
   padding: 0 8px;
+  z-index: 3;
+}
+
+.hero-main-text-holder {
+  position: absolute;
+  width: 100%;
+  top: -150px;
 }
 
 .hero-main-text {
+  font-size: 350%;
   animation: color-change;
   animation-duration: 7s;
   animation-iteration-count: infinite;
+  position: absolute;
   text-shadow: 3px 3px 0px var(--white), 5px 5px 3px #00000096;
+}
+
+.main-one {
+  left: 3px;
+  top: 0;
+}
+
+.main-two {
+  right: 25px;
+  top: 50px;
 }
 
 @keyframes color-change {

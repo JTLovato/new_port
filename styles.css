@@ -82,19 +82,19 @@ nav {
   margin-left: -8%;
   position: relative;
   z-index: 2;
-  /* animation: image-grow; */
+  animation: image-grow;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
 @keyframes image-grow {
   0% {
-    width: 90%;
-    left: 5%;
+    width: 96%;
+    margin-left: 2%;
   }
   100% {
-    width: 98%;
-    left: 1%;
+    width: 116%;
+    margin-left: -8%;
   }
 }
 

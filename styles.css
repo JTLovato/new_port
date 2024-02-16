@@ -27,6 +27,7 @@ body {
 main {
   border: solid 8px var(--black);
   border-radius: 20px;
+  min-height: calc(100vh - 34px);
 }
 
 .rsyte-logo {
@@ -133,8 +134,9 @@ nav {
 }
 
 .hero-button-holder {
-  width: 100%;
+  width: calc(100% - 34px);
   display: flex;
   justify-content: center;
-  margin-bottom: -1px;
+  position: absolute;
+  bottom: 1px;
 }

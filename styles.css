@@ -33,22 +33,28 @@ main {
   width: 75px;
 }
 
+.header {
+  width: 100%;
+}
+
 nav {
-  padding: 12px;
-  width: calc(100% - 66px);
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   z-index: 3;
-  position: absolute;
+  position: relative;
 }
 
 .nav-left {
   display: flex;
   flex-wrap: nowrap;
+  margin: 5px;
 }
-
+.rsyte-logo {
+  margin: 5px;
+}
 .nav-button {
   margin: 0px 7px;
   font-weight: 600;
@@ -66,6 +72,10 @@ nav {
 }
 
 .hero-image {
+  width: 116%;
+  margin-left: -8%;
+  position: relative;
+  z-index: 2;
   /* animation: image-grow; */
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -115,7 +125,16 @@ nav {
 }
 
 .hero-button {
+  padding: 8px 20px;
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 12px 12px 0 0;
+  font-size: 200%;
 }
 
 .hero-button-holder {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -1px;
 }

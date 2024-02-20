@@ -77,6 +77,10 @@ nav {
 .hero-holder {
 }
 
+.hero-main-body {
+  margin-top: 0;
+}
+
 .hero-image {
   width: 116%;
   margin-left: -8%;
@@ -106,34 +110,28 @@ nav {
   background: rgb(242, 242, 242);
   background: linear-gradient(
     180deg,
-    rgba(242, 242, 242, 0.9192051820728291) 22%,
-    rgba(242, 242, 242, 1) 37%
+    rgba(242, 242, 242, 0.03125) 0%,
+    rgba(242, 242, 242, 1) 11%
   );
 }
 
 .hero-main-text-holder {
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: -150px;
 }
 
 .hero-main-text {
-  font-size: 350%;
+  font-size: 400%;
+  margin: 0;
   animation: color-change;
   animation-duration: 7s;
   animation-iteration-count: infinite;
-  position: absolute;
   text-shadow: 3px 3px 0px var(--white), 5px 5px 3px #00000096;
 }
 
-.main-one {
-  left: 3px;
-  top: 0;
-}
-
 .main-two {
-  right: 25px;
-  top: 50px;
+  text-align: end;
+  margin-top: -20px;
 }
 
 @keyframes color-change {
@@ -155,8 +153,6 @@ nav {
 }
 .main-two {
 }
-.hero-main-body {
-}
 
 .hero-button {
   padding: 8px 20px;
@@ -170,4 +166,49 @@ nav {
   display: flex;
   justify-content: center;
   margin-bottom: -1px;
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    position: relative;
+    padding: 17px;
+  }
+  main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: var(--white);
+  }
+
+  .rsyte-logo,
+  .nav-left {
+    margin: 15px;
+  }
+
+  .hero-main-body {
+    position: relative;
+  }
+
+  .hero-holder {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    position: relative;
+  }
+
+  .hero-main-text-holder {
+    position: relative;
+    top: inherit;
+  }
+
+  .hero-text {
+    position: relative;
+    width: 50%;
+  }
+
+  .hero-image {
+    width: 400px;
+    animation: none;
+  }
 }

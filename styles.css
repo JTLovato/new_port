@@ -75,6 +75,8 @@ nav {
 }
 
 .hero-holder {
+  max-height: 40%;
+  overflow: visible;
 }
 
 .hero-main-body {

@@ -1,17 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <head>
+  <head>    
+    <title>RSyte || Your Site For Web Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Denver-based graphic designer and front end developer looking to bring his talents to a company that values gorgeous designs.">
+    <meta name="description" content="Your Site, Your Rules. Join Us At RSyte Today To Build Your Website.">
     <meta name="robots” content="index, follow">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-   
-
-
 <script
   type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
@@ -23,41 +32,58 @@
     });
   })();
 </script>
+</head>
 
+<body>
+  <main> 
+    <header class="header">
+    <nav>
+      <a href="/">
+        <img src="./img/logo.png" alt="RSyte Logo" class="rsyte-logo" />
+      </a>
+      <div class="nav-left">
+        <a href="aboutus.html" class="nav-button">About</a>
+        <a href="services.html" class="nav-button">Services</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+      </div>
+    </nav>
+  </header>
+<div class="contact-holder">
+  <section class="contact-header-holder">
+    <h1>Lets Make Something <br><i>Awesome</i> Together</h1>
+    <h3>Shoot Us An Email Or Give Us A Call And We'll Be Ready!</h3>
+  </section>
+  <form id="contact-form" class="contact-container colorChangeBG">
+    <div class="contact-info" id="contact-info">
+      <input type="hidden" id="contact_number" name="contact_number">
+      <label for="user_name">Name</label>
+      <input 
+        type="text" 
+        id="user_name" 
+        name="user_name" 
+        class="user-name"
+        placeholder="Enter Your Name Here">
+      <label>Email</label>
+      <input 
+        type="email" 
+        id="user_email" 
+        name="user_email" 
+        class="email"
+        placeholder="Enter Your Email Here">
+      <label>Message</label>
+      <textarea 
+        name="message" 
+        id="message"
+        class="message">
+      </textarea>
+      <div class="contact_trouble" id="contact_trouble">Please Fill Out The Form Completely</div>
+      <div class="contact-button-holder">
+        <input class="contact-send" type="submit" value="Submit!">
+      </div>
+    </div>
+  </form>
 
-
-<form id="contact-form" class="contact-container colorChangeBG">
-  <div class="contact-info" id="contact-info">
-    <h1>
-      Find Me On These Sites
-    </h1>
-
-    <h1>
-      Or Email Me
-    </h1>
-    <input type="hidden" id="contact_number" name="contact_number">
-    <label for="user_name">Name</label>
-    <input 
-      type="text" 
-      id="user_name" 
-      name="user_name" 
-      placeholder="Enter Your Name Here">
-    <label>Email</label>
-    <input 
-      type="email" 
-      id="user_email" 
-      name="user_email" 
-      placeholder="Enter Your Email Here">
-    <label>Message</label>
-    <textarea 
-      name="message" 
-      id="message">
-    </textarea>
-    <div class="contact_trouble" id="contact_trouble">Please Fill Out The Form Completely</div>
-    <input class="contact-send" type="submit" value="Send">
-  </div>
-</form>
-
+</div>
 <script type="text/javascript" src="behavior.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>

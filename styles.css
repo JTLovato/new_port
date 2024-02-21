@@ -110,13 +110,6 @@ nav {
   bottom: 0px;
   padding: 0 8px;
   z-index: 3;
-  background: rgb(242, 242, 242);
-  background: linear-gradient(
-    180deg,
-    rgba(242, 242, 242, 0.03125) 0%,
-    rgba(242, 242, 242, 1) 11%,
-    rgba(242, 242, 242, 0) 83%
-  );
 }
 
 .hero-main-text-holder {
@@ -152,10 +145,8 @@ nav {
     color: var(--black);
   }
 }
-
-.main-one {
-}
-.main-two {
+.aside-links {
+  display: none;
 }
 
 .hero-button {
@@ -164,6 +155,12 @@ nav {
   color: var(--white);
   border-radius: 12px 12px 0 0;
   font-size: 200%;
+  transition: 0.15s all ease-in-out;
+  text-decoration: none;
+}
+.hero-button:hover {
+  color: var(--gold);
+  transition: 0.15s all ease-in-out;
 }
 
 .hero-button-holder {
@@ -173,46 +170,136 @@ nav {
 }
 
 @media only screen and (min-width: 992px) {
-  /* body {
-    position: relative;
-    padding: 17px;
+  body {
+    overflow: hidden;
   }
-  main {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    background-color: var(--white);
+  .hero-image {
+    width: 32%;
+    animation: scaler;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    object-fit: cover;
+    object-position: 100%;
+    overflow: visible;
+    padding-top: 10%;
   }
 
-  .rsyte-logo,
+  @keyframes scaler {
+    0% {
+      width: 32%;
+      margin-right: 6%;
+    }
+    100% {
+      width: 36%;
+      margin-right: 4%;
+    }
+  }
+
+  .aside-links {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    right: 5px;
+    top: 50%;
+    width: 50px;
+    z-index: 4;
+  }
+
+  .icon-link {
+    width: 50px;
+    padding: 0px;
+    margin: 3px;
+    transition: 0.15s all ease-in-out;
+  }
+
+  .icon-link:hover {
+    padding: 0px;
+    margin: 0px;
+    transition: 0.15s all ease-in-out;
+  }
+
+  .icon {
+    width: 100%;
+    opacity: 50%;
+    transition: 0.15s all ease-in-out;
+  }
+  .icon:hover {
+    opacity: 100%;
+    transition: 0.15s all ease-in-out;
+  }
+
+  .rsyte-logo {
+    margin: 7px;
+    border-radius: 50%;
+    padding: 3px;
+    transition: 0.2s all ease-out;
+  }
+  .rsyte-logo:hover {
+    background-color: var(--gold);
+    border-bottom: none;
+    transition: 0.2s all ease-out;
+  }
+
   .nav-left {
-    margin: 15px;
+    margin-right: 15px;
+  }
+
+  .hero-main-text {
+    font-size: 10vw;
+  }
+
+  .hero-main-text-holder {
+    line-height: 10vw;
+    margin-top: 40px;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .hero-main-text-holder:hover {
+    color: #a81010;
+    transition: 0.5s all ease-in-out;
   }
 
   .hero-main-body {
-    position: relative;
+    font-size: 2vw;
+  }
+
+  .nav-button {
+    margin: 15px;
+    padding: 0 3px;
+    background-color: var(--white);
   }
 
   .hero-holder {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
     flex-direction: row-reverse;
-    position: relative;
-  }
-
-  .hero-main-text-holder {
-    position: relative;
-    top: inherit;
+    justify-content: space-between;
+    padding: 25px 25px 25px 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    max-height: inherit;
   }
 
   .hero-text {
-    position: relative;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    top: 0;
+    padding: 0 40px 25px;
     width: 50%;
+    background: none;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
-  .hero-image {
-    width: 400px;
-    animation: none;
-  } */
+  .hero-button-holder {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+  }
 }

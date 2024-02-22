@@ -159,6 +159,7 @@ nav {
 }
 
 .contact-header-holder h1 {
+  margin: 12px 0;
   font-size: 8vw;
 }
 .contact-header-holder h3 {

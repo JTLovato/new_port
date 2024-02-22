@@ -127,15 +127,7 @@ nav {
 .message {
   width: 80%;
   border-radius: 6px;
-}
-
-.user-name,
-.email {
   min-height: 30px;
-}
-
-.message {
-  min-height: 50px;
 }
 
 .contact-info label {

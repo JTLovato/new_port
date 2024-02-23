@@ -22,7 +22,7 @@
   margin: 5px 0;
   text-align: center;
   font-size: 10vw;
-  text-decoration: underline;
+  font-style: italic;
 }
 
 html,
@@ -206,7 +206,7 @@ nav {
   max-height: 200px;
   overflow: hidden;
   object-fit: cover;
-  object-position: 100% 0%;
+  object-position: 100% 30%;
   filter: drop-shadow(0px 8px 20px #00000071);
 }
 
@@ -492,7 +492,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     right: 5px;
-    top: 50%;
+    top: 40%;
     width: 50px;
     z-index: 4;
   }
@@ -559,6 +559,7 @@ nav {
     margin: 15px;
     padding: 0 3px;
     background-color: #f2f2f282;
+    font-size: 200%;
   }
 
   .hero-holder {
@@ -593,5 +594,91 @@ nav {
     bottom: 0;
     width: 100%;
     justify-content: center;
+  }
+
+  .about-holder {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .about-text {
+    transform: rotate(-90deg);
+    top: 30%;
+    left: -19%;
+    font-size: 20vh;
+  }
+
+  .about-img {
+    width: 30%;
+    height: 100%;
+    max-height: inherit;
+    top: 0;
+    bottom: 0;
+    border-radius: 0 0 0 10px;
+    object-position: 50% 30%;
+    filter: none;
+  }
+
+  .about-info {
+    position: relative;
+    width: 40%;
+    right: 10%;
+    left: 30%;
+    top: 0;
+    min-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5% 15% 10%;
+    font-size: 125%;
+    overflow: visible;
+  }
+
+  .wider {
+    font-size: 2.5vw;
+  }
+
+  .about-submit-button-holder {
+    right: 10%;
+    width: inherit;
+  }
+
+  .article-title {
+    font-size: 9vh;
+  }
+
+  .list li {
+    font-size: 125%;
+    transition: 0.15s all ease-in-out;
+    padding: 3px 8px;
+    border-radius: 5px;
+  }
+  .list li:hover {
+    background-color: var(--white);
+    color: var(--black);
+    transition: 0.15s all ease-in-out;
+  }
+  .service-article-card {
+    width: 25%;
+    height: 80%;
+    padding: 25px 25px 50px;
+    outline: 5px solid var(--white);
+    outline-offset: -15px;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .article-button {
+    font-size: 200%;
+    width: 200px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .services-holder {
+    overflow: visible;
   }
 }

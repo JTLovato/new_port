@@ -12,8 +12,18 @@
   src: url("fonts/Logistra.ttf");
 }
 
+@font-face {
+  font-family: "Agreloy";
+  src: url("fonts/Agreloy.ttf");
+}
+
 .shadow-font {
   text-shadow: 3px 3px 0px var(--white), 5px 5px 3px #00000096;
+}
+
+.r-font {
+  font-family: "Agreloy";
+  font-size: 150%;
 }
 
 .wider {
@@ -651,7 +661,7 @@ nav {
   }
 
   .list li {
-    font-size: 125%;
+    font-size: 1.35vw;
     transition: 0.15s all ease-in-out;
     padding: 3px 8px;
     border-radius: 5px;
@@ -680,5 +690,85 @@ nav {
 
   .services-holder {
     overflow: visible;
+  }
+
+  .contact-holder {
+    flex-wrap: nowrap;
+  }
+  .contact-holder h1 {
+    font-size: 5vw;
+  }
+  .contact-holder h3 {
+    margin: 0;
+  }
+
+  .contact-header-holder {
+    display: flex;
+    width: 55%;
+    /* align-items: center; */
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 25px;
+  }
+  .contact-container {
+    width: 45%;
+    height: 100%;
+  }
+  .contact-info label {
+    font-size: 3vw;
+  }
+  .message {
+    min-height: 60px;
+  }
+
+  .services-provided-holder {
+    overflow: visible;
+  }
+  .digital-image {
+    width: 30%;
+    right: 0;
+  }
+  .services-provided-holder {
+    width: 60%;
+    left: 0;
+    top: 100px;
+    height: 80%;
+  }
+  .services-provided-text h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0 0 5px;
+  }
+
+  .services-provided-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .services-provided-text h3 {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .services-point {
+    background-color: #9dc783bf;
+    width: 30%;
+    margin: 3px;
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .services-point p {
+    font-size: 80%;
+  }
+
+  .about-submit-button-holder {
+    left: 10%;
+  }
+
+  .services-provided-hero-holder h1,
+  .services-provided-holder h1 {
+    display: none;
   }
 }

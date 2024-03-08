@@ -24,6 +24,8 @@
 .r-font {
   font-family: "Agreloy";
   font-size: 150%;
+  font-style: italic;
+  margin-right: 7px;
 }
 
 .wider {
@@ -768,7 +770,7 @@ nav {
   }
 
   .services-provided-hero-holder h1,
-  .services-provided-holder h1 {
+  .services-provided-header {
     display: none;
   }
 }
